@@ -1,0 +1,5 @@
+profile: service
+defaultPackage: vehicle.info.service
+---
+testFramework: junit
+sourceLanguage: java

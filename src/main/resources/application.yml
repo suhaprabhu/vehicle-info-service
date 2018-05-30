@@ -1,0 +1,17 @@
+micronaut:
+    application:
+        name: vehicle-info-service
+    server:
+        port: 8080
+        maxRequestSize: 1MB
+        netty:
+           maxHeaderSize: 500KB # maximum size for headers
+           worker:
+              threads: 8 # number of netty worker threads
+           childOptions:
+              autoRead: true # auto read request body
+vehicle:
+    info:
+        config: /tmp/vehicle-info
+    api:
+        version: v1
